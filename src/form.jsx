@@ -9,7 +9,7 @@ export function SubscriberForm() {
         console.log(formObject);
     }}>
       <Form.Field>
-        <Form.Label>Username</Form.Label>
+        <Form.Label>Name</Form.Label>
         <Form.Control>
           <Form.Input
             color="success"
@@ -43,18 +43,22 @@ export function SubscriberForm() {
       </Form.Field>
 
       <Form.Field>
-        <Form.Label>Subject</Form.Label>
+        <Form.Label>Enquiry Type</Form.Label>
         <Form.Field kind="group">
           <Form.Control>
             <Form.Select
               name="subject"
             >
-              <option value="select-dropdown">Select dropdown</option>
-              <option value="with-options">With options</option>
+              <option value="independent-purchaser">Independent Purchaser</option>
+              <option value="corporate-purchaser">Corporate Purchaser</option>
+              <option value="government-organisation">Government Organisation</option>
+              <option value="food-catering">Food Catering</option>
+              {/* <option value="select-dropdowna">Select dropdown</option>
+              <option value="with-options">With options</option> */}
             </Form.Select>
           </Form.Control>
           <Form.Control fullwidth loading>
-            <Form.Input placeholder="With loading state" />
+            <Form.Input placeholder="Internal Referral Code" />
           </Form.Control>
         </Form.Field>
       </Form.Field>
